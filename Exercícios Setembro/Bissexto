@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Bissexto {
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		int a= 0,  af, ab = 0;
+		System.out.println("Digite o ano inicial:");
+		a = in.nextInt();
+		System.out.println("Digite o ano final:");
+		af = in.nextInt();
+		do {
+			if ((a % 4==0) && (a % 100 !=0) || (a % 400 == 0)) {
+			System.out.println("O ano "+a+" � bissexto.");
+			ab++;
+		}else {
+			System.out.println(a);
+		}
+		a++;
+		}while(a<=af);
+			System.out.println("O n�mero de anos bissextos � "+ab);
+	}
+}
