@@ -1,0 +1,17 @@
+public class Altura {
+	public static void main(String[] args) {
+		int i;
+		double joao, pedro;
+		joao=134;
+		pedro=145;
+		i=0;
+		
+		while (joao<pedro) {
+			joao = joao+2.5;
+			pedro= pedro+2;
+			i=i+1;
+		}
+		System.out.println("Jo�o levou "+i+" anos para ficar maior que Pedro");
+	}
+
+}
