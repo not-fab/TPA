@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class AprovReprov {
+	public static void main (String args[]) {
+		Scanner in = new Scanner (System.in);
+		int n1, n2, media, exame, total, nM;
+		
+		System.out.println("Insira a primeira nota");
+		n1 = in.nextInt();
+		System.out.println("Insira a segunda nota");
+		n2 = in.nextInt();
+		total = n1+n2;
+		media = total/2;
+		System.out.println("A m�dia � "+media);
+		
+		if (media<=3) {
+			System.out.println("Reprovado");
+		} else if (media>=6) {
+			System.out.println("Aprovado");
+		} else if (media>3 && media<6) {
+			System.out.println("Em exame");
+			System.out.println("Insira a nota do exame");
+			exame = in.nextInt();
+			nM = exame+media/2;
+		if (nM >=6) {
+			System.out.println("Aprovado");
+		} else {
+			System.out.println("Reprovado");
+		}
+		}
+	}
+}
